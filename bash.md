@@ -2,6 +2,7 @@
 
 ### remove all commented lines in a file
 
+    cat file | grep -vE '^(\s*)#'
     awk -F '#' '($0 !~ /^[[:space:]]*#.*$/ && NF) {print $1}' $1
 
 ### leave a busy terminal but leave process running in background.
