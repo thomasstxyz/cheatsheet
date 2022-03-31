@@ -83,3 +83,7 @@ Then, in the same quotes, a new extension is appended to the expansion result.
     for file in *.JPG *.jpeg
     do mv -- "$file" "${file%.*}.jpg"
     done
+
+### find files by file extension and sort by size
+
+    find . -type f -printf '%s %f\n' | awk '{ size = $1; ext = ""; if(sub(/.*\./, "") != 0) { ext = $0 }; total[ext] += size; ++ctr[ext]  } END { PROCINFO["sorted_in"] = "@ind_str_asc"; for(ext in total) { print ext " " ctr[ext] " " total[ext] } }' | awk -F ' ' '{print $3,$1,$2}' OFS=' ' | sort -g
