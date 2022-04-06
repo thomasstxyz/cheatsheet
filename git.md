@@ -1,5 +1,10 @@
 # cheatsheet for git
 
+### name and email address configuration
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
 ### sign commits with GPG
 
     git config --global commit.gpgsign true
