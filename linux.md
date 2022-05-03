@@ -8,3 +8,7 @@
 ### show  ports on which the system listens on
 
     ss -tnl
+
+### detect new hard disk attached without rebooting
+
+    for host in /sys/class/scsi_host/*; do echo "- - -" | sudo tee $host/scan; ls /dev/sd* ; done
