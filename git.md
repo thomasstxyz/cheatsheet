@@ -48,3 +48,11 @@ But do make sure how many commits to go back. Alternatively, you can instead of 
 *1 You will only be "losing" commits from the master branch, but don't worry, you'll have those commits in newbranch!
 
 **WARNING:** With Git version 2.0 and later, if you later git rebase the new branch upon the original (master) branch, you may need an explicit --no-fork-point option during the rebase to avoid losing the carried-over commits. Having branch.autosetuprebase always set makes this more likely. See John Mellor's answer for details.
+
+### undo local commit
+
+This will undo your latest (1) local commit (undo previous `git add` and `git commit`).
+
+    git reset HEAD~1
+    
+Now you can change the files, and do `git add` and `git commit` again.
