@@ -56,3 +56,7 @@ This will undo your latest (1) local commit (undo previous `git add` and `git co
     git reset HEAD~1
     
 Now you can change the files, and do `git add` and `git commit` again.
+
+### revert last number of commits
+
+    git revert --no-commit HEAD~5..
