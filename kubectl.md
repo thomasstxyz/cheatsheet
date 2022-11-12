@@ -7,3 +7,8 @@
 ### Mark storageclass as default
 
     kubectl patch storageclass <storageclass> -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'
+    
+### Changing the reclaim policy of a PersistentVolume
+
+    kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+    
