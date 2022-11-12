@@ -12,3 +12,7 @@
 
     kubectl patch pv <your-pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
     
+### Restart all pods of deployment
+
+    kubectl rollout restart deployment <deploymentname>
+
