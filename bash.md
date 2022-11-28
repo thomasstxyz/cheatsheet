@@ -20,6 +20,10 @@ if you are connected from A to B, and from B to C:
 
     press ~~ tilde twice
 
+### listen on oncoming ip traffic with tcpdump
+
+    tcpdump -l -n -i eth0 dst port 80 and inbound
+
 ### lsof
 
 find out who is looking what files and commands
