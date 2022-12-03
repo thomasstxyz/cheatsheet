@@ -14,3 +14,7 @@ Reconcile flux-system
 Get all flux resources
 
     flux get all
+
+Suspend reconcilation (temporarily disable the automatic sync)
+
+    flux suspend kustomization flux-system
