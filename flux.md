@@ -9,7 +9,7 @@ Basic Troubleshooting on flux-system kustomization and gitrepository
 
 Reconcile flux-system
 
-    flux reconcile kustomization flux-system --with-source
+    flux reconcile source git flux-system && flux reconcile kustomization flux-system --with-source
 
 Get all flux resources
 
