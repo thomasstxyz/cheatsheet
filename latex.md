@@ -9,3 +9,18 @@
 
     \usepackage[margin=2.5cm]{geometry}
 
+### code blocks
+
+Environment:
+
+    \begin{verbatim}
+        $ echo hello world
+    \end{verbatim}
+
+Inline:
+
+    \verb|$ echo hello world|
+
+### clear biber cache
+
+    sudo rm -r `biber --cache`
