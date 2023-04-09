@@ -61,3 +61,10 @@ Now you can change the files, and do `git add` and `git commit` again.
 ### revert last number of commits
 
     git revert --no-commit HEAD~5..
+
+### sync fork via CLI
+
+    git fetch upstream
+    git checkout main
+    git merge upstream/main --ff-only
+    git push origin main
