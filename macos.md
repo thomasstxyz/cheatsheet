@@ -10,3 +10,8 @@
 
     sudo lsof -i -P | grep LISTEN | grep :$PORT
 
+### 3rd party software tools for MacOS
+
+https://github.com/ther0n/UnnaturalScrollWheels 
+
+https://mousefix.org
