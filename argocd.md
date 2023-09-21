@@ -11,3 +11,5 @@ Edit the 'app' (applications.argoproj.io) and set 'finalizer' key to '[]'
 ### get initial admin password secret
 
     kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+    # OR
+    argocd admin initial-password -n argocd
