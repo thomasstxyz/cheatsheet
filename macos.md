@@ -17,3 +17,17 @@ https://github.com/ther0n/UnnaturalScrollWheels
 https://mousefix.org
 
 https://iterm2.com/index.html
+
+### Install Npm & Yarn
+
+Download & Install Node.js from the website:
+
+https://nodejs.org/en/download
+
+Allow user to install packages globally:
+
+    sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+Install Yarn:
+
+    npm install --global yarn
