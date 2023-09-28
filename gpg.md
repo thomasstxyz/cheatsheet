@@ -21,3 +21,15 @@ Now in the gpg edit mode:
 Print the new public key.
 
     gpg --armor --export KEYID
+
+### export private key
+
+    gpg --output private.pgp --armor --export-secret-key username@email
+
+### import private key
+
+    gpg --import private.pgp
+
+### export public key
+
+    gpg --output public.pgp --armor --export username@email
