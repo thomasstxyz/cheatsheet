@@ -16,6 +16,10 @@
 
     git config --global init.defaultBranch main
 
+### Move working tree to a new branch
+
+    git switch -c new-branch
+
 ### Move, transfer the most recent commit(s) to a new branch with Git
 
 **Moving to an existing branch**
