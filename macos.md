@@ -18,6 +18,20 @@ https://mousefix.org
 
 https://iterm2.com/index.html
 
+### GPG sign Git commits
+
+Install:
+
+```bash
+brew install gnupg
+```
+
+```bash
+brew install pinentry-mac
+echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
+killall gpg-agent
+```
+
 ### Install Npm & Yarn
 
 Download & Install Node.js from the website:
@@ -31,3 +45,4 @@ Allow user to install packages globally:
 Install Yarn:
 
     npm install --global yarn
+
