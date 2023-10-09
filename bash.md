@@ -20,6 +20,12 @@ if you are connected from A to B, and from B to C:
 
     press ~~ tilde twice
 
+### recover bash history from frozen terminal session
+
+Get PID of the frozen bash session. Then run this command in a new terminal:
+
+    history -a; kill -HUP 1221363; sleep 1; history -r
+
 ### listen on oncoming ip traffic with tcpdump
 
     tcpdump -l -n -i eth0 dst port 80 and inbound
