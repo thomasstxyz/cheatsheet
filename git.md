@@ -68,6 +68,7 @@ Now you can change the files, and do `git add` and `git commit` again.
 
 ### sync fork via CLI
 
+    git remote add upstream <git_repo_clone_url>.git
     git fetch upstream
     git checkout main
     git merge upstream/main --ff-only
