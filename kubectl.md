@@ -16,3 +16,6 @@
 
     kubectl rollout restart deployment <deploymentname>
 
+### Get all events in cluster sorted by newest first
+
+    kubectl get events -A --sort-by='{.metadata.creationTimestamp}'
