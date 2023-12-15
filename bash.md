@@ -101,3 +101,9 @@ Then, in the same quotes, a new extension is appended to the expansion result.
 ### Here Documents
 
 https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Here-Documents
+
+### disable line wrapping on terminal
+
+    tput rmam
+
+> enable: `tput smam`
