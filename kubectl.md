@@ -19,3 +19,8 @@
 ### Get all events in cluster sorted by newest first
 
     kubectl get events -A --sort-by='{.metadata.creationTimestamp}'
+
+### Print all base64-encoded values of secret
+
+    kubectl get secret name-of-secret -o go-template='{{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'
+
