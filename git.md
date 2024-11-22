@@ -73,3 +73,16 @@ Now you can change the files, and do `git add` and `git commit` again.
     git checkout main
     git merge upstream/main --ff-only
     git push origin main
+
+### Modify a specific commit in the history
+
+> https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit
+
+    git rebase --interactive bbc643cd~
+
+In the editor, modify pick to edit in the line mentioning bbc643cd.
+
+    git commit --all --amend --no-edit
+    git rebase --continue
+
+
