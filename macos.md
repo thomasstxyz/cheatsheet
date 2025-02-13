@@ -46,3 +46,6 @@ Install Yarn:
 
     npm install --global yarn
 
+### Find password of wifi
+
+    security find-generic-password -wga "YOUR Wi-Fi NAME"
