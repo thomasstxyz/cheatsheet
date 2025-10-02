@@ -18,6 +18,17 @@ Now in the gpg edit mode:
     gpg> 5
     gpg> save
 
+(Optional) If you have a subkey:
+
+    # Enter edit mode again as before
+
+    gpg> key 1
+    gpg> expire
+    gpg> 1y
+    gpg> trust
+    gpg> 5
+    gpg> save
+
 Print the new public key.
 
     gpg --armor --export KEYID
